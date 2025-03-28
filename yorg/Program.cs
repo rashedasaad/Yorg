@@ -54,6 +54,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
       options.UseNpgsql(configuration.GetConnectionString("DBConnection")));
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IAdminRepository, AdminRepository>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

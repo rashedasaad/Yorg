@@ -18,21 +18,21 @@ namespace yorg.Model
         public string Email { get; set; }
         public string Password { get; set; }
 
- 
         [Required]
         public string Role { get; set; }
+
 
         public string GoogleId { get; set; } 
 
         public string ProfilePictureUrl { get; set; }  
 
-        public string Locale { get; set; }  
-
         public string AppleId { get; set; }  
 
         public bool IsEmailVerified { get; set; }
 
-        public string AuthenticationProvider { get; set; }  
+        public string AuthenticationProvider { get; set; }
+
+        public bool IsAdmin { get; set; }
 
     }
 }
